@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap");
 :root {
   --pure-white: #fff;
+  --radial-bg: radial-gradient(50% 48.71% at 50% 50%, #fffef3 0%, #fffef3 100%);
   --radial-bg: radial-gradient(50% 48.71% at 50% 50%, #fff175 0%, #ffe500 100%);
   --grey-text: #6f6f6f;
   --white-text: #fffef3;
   --white-text-hover: #fffbd3;
+  --yellow-bg: #ffe500;
+  --while-open-bg: #fffef3;
 }
 
 * {
@@ -76,6 +79,46 @@ a {
 }
 .hero__array-open {
   width: 100vw;
+  background: var(--while-open-bg);
+}
+.hero__array-list {
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--yellow-bg);
+  padding: 60px 160px 60px 60px;
+  border-radius: 12px;
+  box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.1);
+}
+.hero__array-item {
+  margin-bottom: 40px;
+}
+.hero__array-item:last-of-type {
+  margin-bottom: 0px;
+}
+.hero__array-title {
+  margin-bottom: 20px;
+  font-size: 19px;
+}
+
+.inner-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.inner-item {
+  background-color: var(--white-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 16px;
+  border-radius: 12px;
+  font-size: 16px;
+  box-shadow: 1px 5px 15px -12px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 1px 5px 15px -12px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 1px 5px 15px -12px rgba(0, 0, 0, 0.43);
 }
 
 .animateForvard {
@@ -89,17 +132,21 @@ a {
 @keyframes animationOnMoveForvard {
   0% {
     width: 40vw;
+    background: var(--white-text);
   }
   100% {
     width: 100vw;
+    background: var(--while-open-bg);
   }
 }
 @keyframes animationOnMoveBack {
   0% {
     width: 100vw;
+    background: var(--while-open-bg);
   }
   100% {
     width: 40vw;
+    background: var(--white-text);
   }
 }
 .animateForvardMain {
@@ -137,26 +184,22 @@ a {
   font-size: 22px;
   line-height: 27px;
   letter-spacing: 0.1em;
-  background-color: var(--white-text);
-  width: 200px;
+  width: 240px;
   height: 46px;
-  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.31);
-  -webkit-box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.31);
-  -moz-box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.31);
   cursor: pointer;
   transition: 0.3s;
-  border: none;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  width: 212px;
 }
 .hero__button:hover {
-  box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid rgb(185, 185, 185);
 }
 
 .hero__main {
@@ -221,21 +264,24 @@ a {
 
 .hero__image {
   margin-right: 10px;
+  display: block;
 }
 .hero__image--salat {
   width: 30px;
   height: 30px;
-  display: block;
 }
 .hero__image--omlet {
   width: 26px;
   height: 26px;
-  display: block;
 }
 .hero__image --drink {
   width: 26px;
   height: 26px;
-  display: block;
+}
+.hero__image--again {
+  width: 44px;
+  height: 44px;
+  margin-right: 0;
 }
 
 .hero__svg {
@@ -285,4 +331,17 @@ a {
 .hero__text {
   font-size: 26px;
   fill: white;
+}
+
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }/*# sourceMappingURL=main.css.map */

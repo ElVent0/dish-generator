@@ -1,9 +1,12 @@
 :root {
   --pure-white: #fff;
+  --radial-bg: radial-gradient(50% 48.71% at 50% 50%, #fffef3 0%, #fffef3 100%);
   --radial-bg: radial-gradient(50% 48.71% at 50% 50%, #fff175 0%, #ffe500 100%);
   --grey-text: #6f6f6f;
   --white-text: #fffef3;
   --white-text-hover: #fffbd3;
+  --yellow-bg: #ffe500;
+  --while-open-bg: #fffef3;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap');
