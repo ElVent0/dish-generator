@@ -1,5 +1,5 @@
-import '../sass/main.css';
-import food from '../js/data.json';
+import './sass/main.css';
+import food from './js/data.json';
 
 const salatButton = document.querySelector('[data-salat]');
 const omletButton = document.querySelector('[data-omlet]');
