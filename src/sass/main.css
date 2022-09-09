@@ -25,8 +25,8 @@
 .background {
   background: var(--radial-bg);
   color: var(--white-text);
-  padding: 0 2px;
-  border-radius: 20px;
+  padding: 0 4px;
+  border-radius: 6px;
 }
 
 * {
@@ -194,6 +194,7 @@ a {
   }
 }
 .hero__paragraph {
+  font-size: 16px;
   line-height: 34px;
   margin-bottom: 60px;
   display: flex;
