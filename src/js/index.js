@@ -5,13 +5,9 @@ const salatButton = document.querySelector('[data-salat]');
 const omletButton = document.querySelector('[data-omlet]');
 const drinkButton = document.querySelector('[data-drink]');
 const foodsEl = document.getElementsByClassName('hero__paragraph-list');
-
 const arrayEl = document.querySelector('[data-array]');
 const mainEl = document.querySelector('[data-main]');
-// const contentEl = document.querySelector('[data-content]');
-
 const paragraphEl = document.querySelector('[data-paragraph]');
-
 const closeEl = document.querySelector('[data-close]');
 
 omletButton.addEventListener('click', () => {
@@ -91,7 +87,6 @@ function makeSalat() {
     <ul class="inner-list">${salatFinal}</ul>
   </li>
   </ul>`;
-  // console.log(markup);
   arrayEl.insertAdjacentHTML('afterbegin', markup);
 }
 
