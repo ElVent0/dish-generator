@@ -1,21 +1,21 @@
 {
-  "name": "goit-js-hw-10",
+  "name": "dish-generator",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://ElVent0.github.io/goit-js-hw-10",
+  "homepage": "https://ElVent0.github.io/dish-generator",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-10/"
+    "build": "parcel build src/*.html --public-url /dish-generator/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElVent0/goit-js-hw-10.git"
+    "url": "git+https://github.com/ElVent0/dish-generator.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <vasylviter95@gmail.comm>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ElVent0/goit-js-hw-10/issues"
+    "url": "https://github.com/ElVent0/dish-generator/issues"
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
