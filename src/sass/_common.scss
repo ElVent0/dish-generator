@@ -11,6 +11,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap');
 
+.big {
+  font-size: 28px;
+  // position: relative;
+  // transform: rotate(15deg);
+}
+
+.yellow {
+  color: var(--yellow-bg);
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.background {
+  background: var(--radial-bg);
+  color: var(--white-text);
+  padding: 0 2px;
+  border-radius: 20px;
+}
+
 * {
   box-sizing: border-box;
 }

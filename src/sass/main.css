@@ -10,6 +10,25 @@
   --while-open-bg: #fffef3;
 }
 
+.big {
+  font-size: 28px;
+}
+
+.yellow {
+  color: var(--yellow-bg);
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.background {
+  background: var(--radial-bg);
+  color: var(--white-text);
+  padding: 0 2px;
+  border-radius: 20px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -67,6 +86,7 @@ a {
 }
 
 .hero__array {
+  opacity: 8;
   width: 40vw;
   height: 100vh;
   background: var(--white-text);
@@ -176,8 +196,11 @@ a {
 .hero__paragraph {
   line-height: 34px;
   margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
-
 .hero__button {
   box-sizing: border-box;
   font-weight: 200;

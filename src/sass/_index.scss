@@ -3,6 +3,7 @@
   overflow: hidden;
 }
 .hero__array {
+  opacity: 8;
   width: 40vw;
   height: 100vh;
   background: var(--white-text);
@@ -117,6 +118,12 @@
 .hero__paragraph {
   line-height: 34px;
   margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  &-list {
+  }
 }
 
 .hero__button {
