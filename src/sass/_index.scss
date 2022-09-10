@@ -234,12 +234,17 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 27px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
 .hero__list {
   display: flex;
   gap: 20px;
   @media screen and (max-width: 768px) {
-    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   :hover {
     background-color: var(--white-text-hover);

@@ -326,6 +326,11 @@ a {
   font-size: 22px;
   line-height: 27px;
 }
+@media screen and (max-width: 768px) {
+  .hero__title {
+    margin-bottom: 40px;
+  }
+}
 
 .hero__list {
   display: flex;
@@ -333,7 +338,9 @@ a {
 }
 @media screen and (max-width: 768px) {
   .hero__list {
-    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .hero__list :hover {
