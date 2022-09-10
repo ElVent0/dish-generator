@@ -96,6 +96,12 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1200px) {
+  .hero__array {
+    width: 0vw;
+    padding: 0;
+  }
+}
 .hero__array-open {
   width: 100vw;
   background: var(--while-open-bg);
@@ -112,8 +118,19 @@ a {
   -webkit-box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 900px) {
+  .hero__array-list {
+    max-width: 80%;
+    padding: 40px 30px 40px 30px;
+  }
+}
 .hero__array-item {
   margin-bottom: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .hero__array-item {
+    margin-bottom: 20px;
+  }
 }
 .hero__array-item:last-of-type {
   margin-bottom: 0px;
@@ -122,6 +139,12 @@ a {
   margin-bottom: 20px;
   font-size: 19px;
 }
+@media screen and (max-width: 1200px) {
+  .hero__array-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
 
 .hero__about {
   margin-top: auto;
@@ -129,6 +152,12 @@ a {
   opacity: 0.7;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .hero__about {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .hero-svg {
@@ -149,6 +178,11 @@ a {
   flex-wrap: wrap;
   gap: 16px;
 }
+@media screen and (max-width: 1200px) {
+  .inner-list {
+    gap: 10px;
+  }
+}
 .inner-item {
   background-color: var(--white-text);
   display: flex;
@@ -160,6 +194,11 @@ a {
   box-shadow: 1px 5px 15px -12px rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 1px 5px 15px -12px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 1px 5px 15px -12px rgba(0, 0, 0, 0.43);
+}
+@media screen and (max-width: 1200px) {
+  .inner-item {
+    font-size: 14px;
+  }
 }
 
 .animateForvard {
@@ -224,6 +263,11 @@ a {
   justify-content: space-between;
   margin-top: auto;
 }
+@media screen and (max-width: 1200px) {
+  .hero__paragraph {
+    display: none;
+  }
+}
 .hero__button {
   box-sizing: border-box;
   font-weight: 200;
@@ -254,6 +298,11 @@ a {
   width: 60vw;
   height: 100vh;
 }
+@media screen and (max-width: 1200px) {
+  .hero__main {
+    width: 100vw;
+  }
+}
 
 .hero__main-open {
   width: 0vw;
@@ -282,6 +331,11 @@ a {
   display: flex;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .hero__list {
+    display: block;
+  }
+}
 .hero__list :hover {
   background-color: var(--white-text-hover);
   box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.7);
@@ -306,6 +360,14 @@ a {
   -moz-box-shadow: -1px 25px 24px -21px rgba(0, 0, 0, 0.31);
   cursor: pointer;
   transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .hero__item {
+    margin-bottom: 20px;
+  }
+  .hero__item:last-of-type {
+    margin-bottom: 0px;
+  }
 }
 
 .hero__image {
